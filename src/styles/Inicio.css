@@ -1,0 +1,48 @@
+.productos-destacados{
+    width: 100%;
+}
+
+/*H1 TITLE*/
+.destacados{
+    text-align: center;
+    margin:1rem;
+    transition: all .4s ease-in;
+}
+
+.destacados:hover{
+    letter-spacing: 4px;
+}
+
+.img-principal{
+    width: 100%;
+}
+
+.img-principal section{
+width: 100%;
+display: flex;
+justify-content:center;
+align-items: center;
+}
+
+.img-principal img{
+    max-width: 50%;
+    max-height: 300px;
+    border-radius: 50%;
+    margin: 3rem;
+}
+
+.productos img{
+    text-align:center;
+    max-height: 250px;
+}
+
+.card-body{
+    text-align: center;  
+     height: 7.5rem;
+     padding: 0;
+}
+.productos .bg-danger{
+    position: relative;
+    bottom:16.4rem;
+    left:6rem;
+}
