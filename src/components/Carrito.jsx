@@ -12,7 +12,7 @@ const Carrito = () => {
         setCarrito((old) => old.filter(item => item.id !== id))
     }
   return (
-  <div className='contenedor-carrito'>
+  <div className='contenedor-carrito' role='listitem'>
     <section className='carrito'>
       <h2 className='titulo__carrito'>Carrito de compras</h2>
         {carrito.length > 0 ?

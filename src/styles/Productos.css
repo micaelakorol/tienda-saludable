@@ -63,6 +63,12 @@ form svg{
 
 .productos .btn-warning{
     color:black;
+    font-weight: 600;
+}
+
+.btn-warning{
+    background-color: var(--color-primario) !important;
+    border:none;
 }
 
 @media (max-width:765px){

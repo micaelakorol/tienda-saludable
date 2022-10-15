@@ -15,7 +15,6 @@ const {agregarProducto} = useContext(UserContext)
 const [state,setState] = useState([])
 let [searchParams, setSearchParams] = useSearchParams()
 
-//busqueda de productos:
   const handleChange = e => {
     let filter = e.target.value; 
       if(filter){
@@ -25,23 +24,22 @@ let [searchParams, setSearchParams] = useSearchParams()
         setSearchParams({})
 }}
 
-//almaceno la data en producto, luego la paso al state.
 useEffect(() => {
   const producto = data;
   setState(producto.items)
   },[state])
 
   return (
-  <>  
+  <main>  
 {/* Input de busqueda */}
-<header className='contenedor-header'>
+<section className='contenedor-header' role='search'>
   <form action="">
     <input type="text" placeholder='Qué estás buscando?' value={searchParams.get('filter') || ""}
         onChange={handleChange} /> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
       <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
         </svg>
          </form>
-           </header>
+           </section>
 {/* Seccion de productos */}
 <div className='productos'>
 {
@@ -67,7 +65,7 @@ state.filter((items) => {
   ))
 }
 </div>
-</>
+</main>
   )
 }
 

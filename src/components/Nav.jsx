@@ -9,7 +9,7 @@ const Nav = () => {
 const {sumar} = useContext(UserContext)
 
   return (
-<div className='contenedor-nav'>
+<div className='contenedor-nav' role='navigation'>
   <nav className='nav'>
     <NavLink to={'/'}>Inicio</NavLink>
       <NavLink to={'/productos'}>Productos</NavLink>

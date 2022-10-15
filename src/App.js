@@ -9,7 +9,7 @@ const App = () => {
     <div>
       <Helmet>
         <link rel="icon" href={require("./img/logo.png")} />
-        <title>Brotes Saludable</title>
+        <title>Brotes Productos Saludables</title>
       </Helmet>
       <UserProvider>
         <Nav />
