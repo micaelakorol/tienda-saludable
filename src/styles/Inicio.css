@@ -6,6 +6,7 @@
 .destacados{
     text-align: center;
     margin:1rem;
+    font-size: 1.6rem;
     transition: all .4s ease-in;
 }
 
@@ -43,6 +44,6 @@ align-items: center;
 }
 .productos .bg-danger{
     position: relative;
-    bottom:16.4rem;
+    bottom:14.4rem;
     left:6rem;
 }

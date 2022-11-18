@@ -25,7 +25,7 @@ const Inicio = () => {
         <div className="productos">
           {productos.map((item) => (
             <Card
-              style={{ width: "18rem", textAlign: "center", padding: "1rem" }}
+              style={{ width: "15rem", textAlign: "center", padding: ".4rem" }}
               key={item.id}
               className="card"
             >
