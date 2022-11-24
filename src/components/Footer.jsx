@@ -4,7 +4,7 @@ import '../styles/Footer.css'
 const Footer = () => {
   return (
     <div className='container-footer'>
-     <footer role='contentinfo'>
+     <footer>
 <NavLink to={'/#'}>Trabajá con Nosotros</NavLink>
 <NavLink to={'/#'}>Términos y condiciones</NavLink>
 <NavLink to={'/#'}>Ayuda</NavLink>

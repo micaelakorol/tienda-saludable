@@ -2,6 +2,14 @@ const data = {
     status: "success",
     items: [
       {
+        id: 0,
+        title: "Burger Vegana",
+        price:530,
+        image: require('./images/burger.png'),
+        marca: "I'm Veggie",
+        cantidad:1
+      },
+      {
         id: 1,
         title: "Fideos Integrales",
         price: 250,

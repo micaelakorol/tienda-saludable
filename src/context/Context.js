@@ -1,6 +1,5 @@
 import { createContext, useState} from "react";
-import swal from 'sweetalert'
-//Context:
+
 export const UserContext = createContext();
     const UserProvider = ({children}) => {
         const [carrito,setCarrito] = useState([])
@@ -42,12 +41,9 @@ export const UserContext = createContext();
         const sumar = carrito.map(item => item.cantidad).reduce((prev,curr)=> prev + curr, 0)
          const totales = carrito.map(item => item.total).reduce((prev,curr)=> prev + curr, 0)
 
-        const irAPagar = () => {
-            return swal("Gracias por su compra!");
-        }
 
     return(
-        <UserContext.Provider value={{carrito,setCarrito,agregarProducto,sumar,totales,irAPagar}}>
+        <UserContext.Provider value={{carrito,setCarrito,agregarProducto,sumar,totales}}>
             {children}
         </UserContext.Provider>
     )

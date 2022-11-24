@@ -11,12 +11,13 @@ const Inicio = () => {
     const producto = destacados;
     setProductos(producto.items);
   }, [productos]);
+  
   return (
     <header>
       {/* Imagen principal */}
       <div className="img-principal">
         <section>
-          <img src={require("../img/logo.png")} alt="" />
+          <img src={require("../assets/logo.png")} alt="" />
         </section>
       </div>
       {/* Productos destacados de la ruta indice */}
