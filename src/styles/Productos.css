@@ -14,7 +14,6 @@
 
 .productos img {
   text-align: center;
-  /*  height: 300px;*/
   cursor: pointer;
   transition: transform 0.2s ease-in;
   padding: 1rem;
@@ -24,12 +23,18 @@
   transform: scale(1.05);
 }
 
+.cardProdutos{
+  width: 17rem;
+  text-align:center;
+  padding: .5rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
 /*INPUT*/
 .contenedor-productos {
   width: 100%;
   height: auto;
   margin: 1rem;
-  /*   background-color: #ededed;*/
 }
 
 form {
@@ -44,13 +49,14 @@ form {
   padding: 0.5rem;
   outline: none;
   margin-top: 2rem;
-  background-color: #ededed;
-  border: 1px solid #8c8c8c;
+  background-color: var(--gray);
+  border:none;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
 form svg {
   position: relative;
-  right: 1.2rem;
+  right: 2rem;
   top: 1rem;
   cursor: pointer;
   color: var(--color-oscuro);

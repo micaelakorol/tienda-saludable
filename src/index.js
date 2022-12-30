@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import Inicio from './routes/Inicio';
+import PaginaPrincipal from './routes/PaginaPrincipal';
 import Categorias from './routes/Categorias';
 import Productos from './routes/Productos';
 import Carrito from './components/Carrito';
@@ -14,7 +14,7 @@ root.render(
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<App/>}>
-      <Route index element={<Inicio/>}/>
+      <Route index element={<PaginaPrincipal/>}/>
       <Route path='/categorias' element={<Categorias/>}/>
       <Route path='/productos' element={<Productos/>}/>
       <Route path='/carrito' element={<Carrito/>}/>

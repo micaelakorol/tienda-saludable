@@ -10,15 +10,13 @@ nav {
 }
 nav a {
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: .9rem;
   letter-spacing: 1px;
   font-weight: 600;
   color: var(--color-secundario);
   transition: all 0.5s;
 }
-nav a:hover {
-  color: var(--color-oscuro);
-}
+
 nav .bi {
   cursor: pointer;
   position: relative;

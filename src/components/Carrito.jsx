@@ -15,13 +15,13 @@ const Carrito = () => {
       <section className="carrito">
         <h2 className="titulo__carrito">Carrito de compras</h2>
         {carrito.length > 0 ? (
+          
           carrito.map((item) => {
-            const { cantidad, title, price } = item;
+            const { cantidad, title, price, id } = item;
             return (
-              <div key={item.id} className="productos">
+              <div key={id} className="productos">
                 <b>{title} </b>
                 <b> Cantidad: {item.cantidad}</b>
-                {/* Precio:<b> $ {item.price} </b> */}
                 <i> $ {price * cantidad}</i>
                 <button
                   onClick={() => eliminarProductos(item.id)}
@@ -34,7 +34,7 @@ const Carrito = () => {
           })
         ) : (
           <p>Aun no has agregado productos al carrito :( </p>
-        )}{" "}
+        )}
         <i className="compra-total">Total de Compra: $ {totales} </i>
         {totales > 1 && (
           <Button variant="light" onClick={() => irAPagar()}>

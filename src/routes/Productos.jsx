@@ -34,19 +34,19 @@ const Productos = () => {
     <main>
       {/* Input de busqueda */}
       <section className="contenedor-productos">
-        <form action="">
+        <form action="" method="post">
           <input
             type="text"
-            placeholder="Qué estás buscando?"
+            placeholder="¿Qué estás buscando?"
             value={searchParams.get("filter") || ""}
             onChange={handleChange}
           />
-
           <LupaInput />
         </form>
       </section>
+
       {/* Seccion de productos */}
-      <div className="productos">
+      <article className="productos">
         {state
           .filter((items) => {
             let filter = searchParams.get("filter");
@@ -58,11 +58,10 @@ const Productos = () => {
           })
           .map((item) => (
             <Card
-              style={{ width: "18rem", textAlign: "center", padding: ".5rem" }}
               key={item.id}
-              className="card"
+              className="card cardProdutos"
             >
-              <img src={item.image} alt="" />
+              <img src={item.image} alt={item.title} />
               <Card.Body>
                 <Card.Title>{item.title} </Card.Title>
                 <Card.Title>
@@ -88,7 +87,7 @@ const Productos = () => {
               </Card.Body>
             </Card>
           ))}
-      </div>
+      </article>
     </main>
   );
 };
