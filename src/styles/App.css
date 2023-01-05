@@ -1,28 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 /** VARIABLES */
 
 #root {
-  --color-primario: #bfe0c0;
-  --color-secundario: #3e3433;
-  --color-oscuro: #505045
+  --color-primario: #b1de71;
+  --color-secundario: #444;
+  --color-oscuro: #505045;
   --gray-light: #f8f9fa;
   --gray: hsl(0, 0%, 98%);
-  --black-light: #333;
+  --organizador: #f7ece7;
   overflow-x: hidden;
-  background-color: var(--gray-light);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Karla', sans-serif;
+  font-family: "Playfair Display", serif;
 }
 body html {
   width: 100vw;
   height: 100vh;
+  background-color: var(--gray-light);
 }
 
-a:hover{
+a:hover {
   color: #198754;
 }

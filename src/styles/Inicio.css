@@ -1,55 +1,43 @@
-.productos-destacados{
-    width: 100vw;
-}
-
 /*H1 TITLE*/
-.destacados{
-    text-align: center;
-    margin:1rem;
-    font-size: 1.6rem;
-    transition: all .4s ease-in;
-    text-transform: uppercase;
+.destacados {
+  text-align: center;
+  margin: 1rem;
+  font-size: 1.6rem;
+  transition: all 0.4s ease-in;
+  text-transform: uppercase;
 }
 
-.destacados:hover{
-    letter-spacing: 4px;
+.destacados:hover {
+  letter-spacing: 4px;
 }
 
-.img-principal{
-width: 100%;
-display: flex;
-justify-content:center;
-align-items: center;
+.img-principal {
+  text-align: center;
+}
+.img-principal img {
+  max-width: 50%;
+  max-height: 300px;
+  border-radius: 20%;
+  margin: 3rem;
 }
 
-.img-principal img{
-    max-width: 50%;
-    max-height: 300px;
-    border-radius: 50%;
-    margin: 3rem;
+.card {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border: none;
+  text-align: center;
+  padding: 0.4rem;
+  margin: 0.5rem;
 }
 
-.card{
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    border: none;
-    width: 15.3rem;
-    text-align:center;
-    padding: .4rem;
-    height: auto;
+li {
+  list-style: none;
 }
 
-.productos img{
-    text-align:center;
-    max-height: 250px;
+.organizador {
+  background-color: var(--organizador);
+  padding: 0.5rem;
 }
-
-.card-body{
-    text-align: center;  
-     height: 7.5rem;
-     padding: 0;
-}
-.productos .bg-danger{
-    position: relative;
-    bottom:14rem;
-    left:4rem;
+.organizador a {
+  color: #000;
 }
