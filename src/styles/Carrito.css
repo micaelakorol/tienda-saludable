@@ -1,0 +1,34 @@
+.carrito {
+  width: 60%;
+  padding: 2rem;
+  min-height: 400px;
+  background-color: var(--gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+}
+
+.carrito .eliminar {
+  border: none;
+  background-color: var(--gray);
+}
+
+.carrito .btn-light {
+  margin: 1rem;
+}
+
+.titulo__carrito {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.carrito .compra-total {
+  color: var(--color-secundario);
+}
+
+.carrito a {
+  text-decoration: none;
+  color: var(--color-secundario);
+}

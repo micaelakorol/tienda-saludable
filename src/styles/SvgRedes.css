@@ -1,0 +1,10 @@
+.redes{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .redes img{
+    margin: .4rem;
+    cursor: pointer;
+  }
