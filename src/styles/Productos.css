@@ -1,6 +1,7 @@
 .productos {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 22%);
+  justify-content: center;
   gap: 0.5rem;
 }
 
