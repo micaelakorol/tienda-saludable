@@ -1,5 +1,5 @@
 .carrito {
-  width: 60%;
+  width: 70%;
   padding: 2rem;
   min-height: 400px;
   background-color: var(--gray);
@@ -8,6 +8,11 @@
   align-items: center;
   justify-content: center;
   margin: 1rem auto;
+}
+
+.productos_carrito {
+  width: 80%;
+  text-align: center;
 }
 
 .carrito .eliminar {

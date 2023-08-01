@@ -1,7 +1,7 @@
 import React from "react";
 import "../../styles/Inicio.css";
 import destacados from "../../dataProducts/destacados";
-import Footer from "../../components/Footer";
+import Footer from "../Footer/Footer";
 import ImagenPresentacion from "./ImagenPresentacion";
 import ProductosDestacados from "./ProductosDestacados";
 

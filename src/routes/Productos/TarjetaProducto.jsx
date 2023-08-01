@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
-import { UserContext } from "../../context/Context";
+import React from "react";
 import { Button, Badge } from "react-bootstrap";
+import AñadirProducto from "../../services/AñadirProducto";
 
 const TarjetaProducto = ({ item }) => {
-  const { agregarProducto } = useContext(UserContext);
+  const { agregarProducto } = AñadirProducto();
   return (
     <ul key={item.id} className="tarjeta">
       <img src={item.image} alt={item.title} className="imgProducto" />

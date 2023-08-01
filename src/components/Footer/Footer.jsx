@@ -1,7 +1,7 @@
 import React from "react";
-import logo from "../assets/logow.png";
-import "../styles/Footer.css";
-import Redes from "./svg/Redes";
+import logo from "../../assets/logow.png";
+import "../../styles/Footer.css";
+import Redes from "../svg/Redes";
 const Footer = () => {
   return (
     <footer>

@@ -1,14 +1,12 @@
 import React from "react";
-import { useContext } from "react";
 import { Badge } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
-import { UserContext } from "../context/Context";
-import "../styles/Nav.css";
-import SvgCarritoNav from "./svg/SvgCarritoNav";
+import "../../styles/Nav.css";
+import SvgCarritoNav from "../svg/SvgCarritoNav";
+import SumarProductos from "../../services/SumarProductos";
 
 const Nav = () => {
-  const { sumar } = useContext(UserContext);
-
+  const {sumaProducto} = SumarProductos()
   return (
     <nav>
       <NavLink to={"/"}>Inicio</NavLink>
@@ -19,7 +17,7 @@ const Nav = () => {
       <NavLink to={"/carrito"}>
         <h6>
           <Badge bg="success" pill>
-            {sumar}
+            {sumaProducto}
           </Badge>
         </h6>
         <button className="svg-button">
