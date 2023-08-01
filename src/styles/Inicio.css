@@ -35,7 +35,7 @@ li {
 }
 
 .organizador {
-  background-color: var(--organizador);
+  background-color: var(--color-primario);
   padding: 0.5rem;
 }
 .organizador a {

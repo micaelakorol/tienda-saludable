@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import React from "react";
 import "../../styles/Productos.css";
-import data from "../../dataProducts/data";
+import data from "../../services/productos/data";
 import { useSearchParams } from "react-router-dom";
 import InputBusqueda from "./InputBusqueda";
 import TarjetaProducto from "./TarjetaProducto";

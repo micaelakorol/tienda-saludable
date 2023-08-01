@@ -18,9 +18,7 @@
   box-sizing: border-box;
   font-family: "Playfair Display", serif;
 }
-body html {
-  width: 100vw;
-  height: 100vh;
+html {
   background-color: var(--gray-light);
 }
 
