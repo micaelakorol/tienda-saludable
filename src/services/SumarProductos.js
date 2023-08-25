@@ -10,7 +10,7 @@ const SumarProductos = () => {
   const totales = carrito
     .map((item) => item.total)
     .reduce((prev, curr) => prev + curr, 0);
-  return { sumaProducto,totales };
+  return { sumaProducto, totales };
 };
 
 export default SumarProductos;

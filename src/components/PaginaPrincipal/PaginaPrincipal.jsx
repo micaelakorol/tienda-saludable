@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/Inicio.css";
-import destacados from "../../services/productos/destacados";
+import destacados from "../../services/constants/destacados";
 import Footer from "../Footer/Footer";
 import ImagenPresentacion from "./ImagenPresentacion";
 import ProductosDestacados from "./ProductosDestacados";
