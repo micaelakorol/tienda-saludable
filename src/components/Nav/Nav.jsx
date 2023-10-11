@@ -2,8 +2,9 @@ import React from "react";
 import { Badge } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import "../../styles/Nav.css";
-import SvgCarritoNav from "../svg/SvgCarritoNav";
+import { cart } from "../../assets/variables";
 import SumarProductos from "../../services/SumarProductos";
+import Icons from "../../reusable/Icons";
 
 const Nav = () => {
   const {sumaProducto} = SumarProductos()
@@ -21,7 +22,7 @@ const Nav = () => {
           </Badge>
         </h6>
         <button className="svg-button">
-          <SvgCarritoNav />
+          <Icons src={cart} alt='cart'className='bi'/>
         </button>
       </NavLink>
     </nav>

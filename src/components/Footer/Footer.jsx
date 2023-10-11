@@ -1,12 +1,12 @@
 import React from "react";
-import logo from "../../assets/logow.png";
+import { logoBrotes } from "../../assets/variables";
 import "../../styles/Footer.css";
-import Redes from "../svg/Redes";
+import RedesSociales from "./RedesSociales";
 const Footer = () => {
   return (
     <footer>
       <section>
-        <img src={logo} alt="logo" className="logoFooter" />
+        <img src={logoBrotes} alt="logo" className="logoFooter" />
       </section>
 
       <section>
@@ -23,7 +23,7 @@ const Footer = () => {
 
       <section>
         <p>Contacto</p>
-        <Redes />
+        <RedesSociales />
       </section>
     </footer>
   );

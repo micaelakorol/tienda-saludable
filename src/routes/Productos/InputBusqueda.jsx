@@ -1,5 +1,6 @@
 import React from 'react'
-import LupaInput from '../../components/svg/LupaInput'
+import { glass } from '../../assets/variables'
+import Icons from '../../reusable/Icons'
 
 const InputBusqueda = ({searchParams,handleChange}) => {
   return (
@@ -10,7 +11,7 @@ const InputBusqueda = ({searchParams,handleChange}) => {
       value={searchParams.get("filter") || ""}
       onChange={handleChange}
     />
-    <LupaInput />
+    <Icons src={glass} alt='glass-search' className='glass'/>
   </form>
   )
 }
