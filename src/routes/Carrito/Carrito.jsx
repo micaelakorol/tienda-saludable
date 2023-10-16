@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import "../../styles/Carrito.css";
 import { UserContext } from "../../context/Context";
-import ItemsCarrito from "./ItemsCarrito";
-import TotalCompra from "./TotalCompra";
+import TotalCompra from "./Elementos/TotalCompra";
+import ResumenCarrito from "./Elementos/ResumenCarrito";
 
 const Carrito = () => {
   const { carrito } = useContext(UserContext);
@@ -14,7 +14,7 @@ const Carrito = () => {
         carrito.map((item) => {
           return (
             <div key={item.id} className="productos_carrito">
-              <ItemsCarrito item={item} />
+              <ResumenCarrito item={item} />
             </div>
           );
         })

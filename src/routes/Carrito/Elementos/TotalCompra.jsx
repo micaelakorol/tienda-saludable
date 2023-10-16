@@ -1,5 +1,5 @@
 import { Button } from "react-bootstrap";
-import SumarProductos from "../../services/SumarProductos";
+import SumarProductos from "../../../services/SumarProductos";
 
 const TotalCompra = () => {
   const { totales } = SumarProductos();

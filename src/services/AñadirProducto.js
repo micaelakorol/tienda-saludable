@@ -3,7 +3,7 @@ import { UserContext } from "../context/Context";
 
 const useAñadirProducto = () => {
   const { carrito, setCarrito } = useContext(UserContext);
-  const agregarProducto = (idProducto, price, title) => {
+  const agregarProducto = (idProducto, precio, nombre) => {
     const productoExistente = carrito.find(
       (productoCarrito) => productoCarrito.id === idProducto
     );
@@ -14,7 +14,7 @@ const useAñadirProducto = () => {
             ? {
                 ...productoCarrito,
                 cantidad: productoCarrito.cantidad + 1,
-                total: (productoCarrito.cantidad + 1) * price,
+                total: (productoCarrito.cantidad + 1) * precio,
               }
             : productoCarrito
         )
@@ -24,10 +24,10 @@ const useAñadirProducto = () => {
         ...prevCarrito,
         {
           id: idProducto,
-          title: title,
+          nombre: nombre,
           cantidad: 1,
-          price: price,
-          total: price * 1,
+          precio: precio,
+          total: precio * 1,
         },
       ]);
     }

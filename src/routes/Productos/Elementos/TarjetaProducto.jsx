@@ -1,22 +1,22 @@
 import React from "react";
 import { Button, Badge } from "react-bootstrap";
-import AñadirProducto from "../../services/AñadirProducto";
+import AñadirProducto from "../../../services/AñadirProducto";
 
 const TarjetaProducto = ({ item }) => {
   const { agregarProducto } = AñadirProducto();
   return (
     <ul key={item.id} className="tarjeta">
-      <img src={item.image} alt={item.title} className="imgProducto" />
+      <img src={item.imagen} alt={item.nombre} className="imgProducto" />
       <li className="descripcion-producto">
-        <h4>{item.title} </h4>
+        <h4>{item.nombre} </h4>
         <p>{item.marca}</p>
         <Badge bg="success" className="badge">
-          ${item.price}
+          ${item.precio}
         </Badge>
         <Button
           variant="warning"
           onClick={() =>
-            agregarProducto(item.id, item.price, item.title, item.cantidad)
+            agregarProducto(item.id, item.precio, item.nombre, item.cantidad)
           }
         >
           Agregar al carrito

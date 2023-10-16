@@ -1,6 +1,6 @@
 import React from 'react'
-import { glass } from '../../assets/variables'
-import Icons from '../../reusable/Icons'
+import { glass } from '../../../assets/variables'
+import Icons from '../../../reusable/Icons'
 
 const InputBusqueda = ({searchParams,handleChange}) => {
   return (
